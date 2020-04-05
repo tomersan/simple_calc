@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+            max-width:1200px;
+        }
+
+        .input,
+        .select,
+        .button{
+            padding: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="input">
+            <input type="text" id="firstNumber" >
+            <p id="firstError"></p>
+        </div>
+
+
+        <div class="select">
+            <select name="operator" id="operatorKey">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+
+
+        <div class="input">
+            <input type="text" id="secondNumber">
+            <p id="secondError"></p>
+        </div>
+        
+        <div class="button">
+            <button id="btn" onclick="calc()">
+                Click me
+            </button>
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+
+    <script src="simple-calculator.js"></script>
+    
+</body>
+</html>
